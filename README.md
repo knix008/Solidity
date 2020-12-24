@@ -18,7 +18,6 @@ truffle(ganache)> accounts
 ]
 
 truffle(ganache)> instance.approve(accounts[0], 10000)
-...
 
 truffle(ganache)> instance.balanceOf(accounts[0])
 BN {
@@ -29,7 +28,6 @@ BN {
 }
 
 truffle(ganache)> instance.transferFrom(accounts[0], METFaucet.address, 1000)
-...
 
 truffle(ganache)> instance.balanceOf(METFaucet.address)
 BN {
@@ -40,7 +38,6 @@ BN {
 }
 
 truffle(ganache)> instance.approve(accounts[1], 1000)
-...
 
 truffle(ganache)> METFaucet.deployed().then(instance => {instance.withdraw(100, {from:accounts[1]})})
 undefined
