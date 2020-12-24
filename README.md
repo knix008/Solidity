@@ -1,4 +1,5 @@
-# Solidity
+# Solidity test using truffle + ganache
+
 Solidity Programming Practice
 
 Truffle console example : 
